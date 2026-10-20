@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Allo Chauffeur · Chauffeur VTC Toulouse, transfert aéroport Blagnac</title>
+<meta name="description" content="Chauffeur VTC à Toulouse : transferts aéroport Toulouse-Blagnac, gare Matabiau et longues distances. Prix fixe annoncé à l'avance, réservation 24h/24.">
+<link rel="canonical" href="https://alloochauffeur.com/">
+<meta property="og:title" content="Allo Chauffeur · Chauffeur VTC à Toulouse">
+<meta property="og:description" content="Transferts aéroport Blagnac, gare Matabiau et longues distances. Prix fixe, réservation 24h/24.">
+<meta property="og:url" content="https://alloochauffeur.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#1b1626">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Allo Chauffeur",
+  "description": "Chauffeur VTC à Toulouse sur réservation : transferts aéroport, gare et longues distances.",
+  "url": "https://alloochauffeur.com/",
+  "telephone": "+33600000000",
+  "email": "contact@alloochauffeur.com",
+  "areaServed": "Toulouse",
+  "address": {"@type": "PostalAddress", "addressLocality": "Toulouse", "addressCountry": "FR"},
+  "openingHours": "Mo-Su 00:00-23:59",
+  "priceRange": "€€"
+}
+</script>
+<style>
+:root{
+  --bg:#f7f3f2; --surface:#ffffff; --ink:#1b1626; --muted:#6a6170; --line:#e6dcdb;
+  --brick:#c4553f; --brick-ink:#ffffff; --night:#1b1626; --night-ink:#f4ecea; --ok:#2f7d5b;
+  --display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --body:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.05;text-wrap:balance;margin:0}
+a{color:inherit}
+.btn{display:inline-flex;align-items:center;gap:.5em;font:600 1rem var(--body);padding:.85em 1.3em;border-radius:999px;border:0;cursor:pointer;text-decoration:none}
+.btn-primary{background:var(--brick);color:var(--brick-ink)}
+.btn-ghost{background:transparent;color:var(--night-ink);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--night-ink) 45%,transparent)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--brick);outline-offset:2px}
+.label{font:600 .75rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--brick)}
+
+.top{background:var(--night);color:var(--night-ink)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:14px;flex-wrap:wrap}
+.brand{font:800 1.2rem var(--display);letter-spacing:-.01em;text-decoration:none}
+.brand span{color:var(--brick)}
+.phone{font:500 .95rem var(--mono);text-decoration:none}
+
+.hero{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% -10%;height:70%;
+  background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--brick) 22%,transparent) 0 46px,transparent 46px 50px);
+  -webkit-mask:linear-gradient(transparent,#000 60%);mask:linear-gradient(transparent,#000 60%);opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;padding-block:48px 64px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.02em;margin-top:12px}
+.hero h1 em{font-style:normal;color:var(--brick)}
+.hero p{max-width:34ch;color:color-mix(in srgb,var(--night-ink) 78%,transparent);font-size:1.1rem;margin:18px 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.badges{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:.9rem;color:color-mix(in srgb,var(--night-ink) 70%,transparent)}
+
+.quote{background:var(--surface);color:var(--ink);border-radius:18px;padding:22px;box-shadow:0 30px 60px -30px #000}
+.quote h2{font-size:1.15rem;margin-bottom:14px}
+.field{display:grid;gap:6px;margin-bottom:12px}
+.field label{font-size:.82rem;font-weight:600;color:var(--muted)}
+select,input{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:.7em .8em;width:100%;min-width:0}
+.fare{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line);padding-top:14px;margin-top:6px}
+.fare b{font:700 2.2rem var(--display)}
+.fare small{color:var(--muted)}
+
+section{padding-block:64px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.015em}
+.sec-head p{color:var(--muted);max-width:44ch;margin:0}
+
+.board{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;padding:16px 20px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.route{min-width:0}
+.route b{display:block;font-weight:600}
+.route span{color:var(--muted);font-size:.9rem}
+.dur{font:500 .85rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.price{font:700 1.35rem var(--display);font-variant-numeric:tabular-nums;min-width:4.5ch;text-align:right}
+.note{color:var(--muted);font-size:.88rem;margin-top:12px}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{padding:22px 0;border-top:3px solid var(--brick)}
+.svc h3{font-size:1.25rem;margin-bottom:8px}
+.svc p{margin:0;color:var(--muted)}
+
+.book{background:var(--night);color:var(--night-ink)}
+.book .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.book h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:10px}
+.book .intro p{color:color-mix(in srgb,var(--night-ink) 75%,transparent)}
+.contact-line{display:block;font:500 1.15rem var(--mono);margin-top:18px;text-decoration:none}
+.contact-line.small{font-size:.95rem;margin-top:6px}
+form{background:var(--surface);color:var(--ink);border-radius:18px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
+form .full{grid-column:1/-1}
+.msg{grid-column:1/-1;background:color-mix(in srgb,var(--ok) 14%,transparent);border-radius:10px;padding:12px 14px;font-size:.92rem}
+.msg.err{background:color-mix(in srgb,var(--brick) 14%,transparent)}
+
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{font-weight:600;cursor:pointer}
+.faq p{color:var(--muted);margin:10px 0 0;max-width:65ch}
+
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust div b{display:block;font:700 1.9rem var(--display)}
+.trust div span{color:var(--muted);font-size:.9rem}
+
+footer{border-top:1px solid var(--line);padding-block:32px;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.callbar{display:none}
+@media (max-width:760px){
+  .hero .wrap,.book .grid{grid-template-columns:1fr;gap:28px}
+  .services{grid-template-columns:1fr;gap:4px}
+  .trust{grid-template-columns:1fr 1fr}
+  form{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr auto;padding:14px 16px}
+  .dur{grid-column:1;grid-row:2;margin-top:-10px}
+  .price{grid-row:1/3;grid-column:2}
+  section{padding-block:48px}
+  .callbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--night);
+    padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+  .callbar .btn{flex:1;justify-content:center}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">Allo<span>.</span> Chauffeur</a>
+    <a class="phone" data-tel href="tel:+33600000000">06 00 00 00 00</a>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="label">Chauffeur VTC · Toulouse</div>
+      <h1>Votre chauffeur privé, <em>prix fixe</em> annoncé à l'avance.</h1>
+      <p>Transferts aéroport Toulouse-Blagnac, gare Matabiau et longues distances. Réservez en 1 minute, sans surprise au compteur.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#reserver">Réserver un trajet</a>
+        <a class="btn btn-ghost" data-wa href="https://wa.me/33600000000">WhatsApp</a>
+      </div>
+      <div class="badges">
+        <span>Berline confortable</span>
+        <span>24h/24 sur réservation</span>
+        <span>CB et espèces acceptées</span>
+      </div>
+    </div>
+
+    <div class="quote" aria-live="polite">
+      <h2>Estimez votre trajet</h2>
+      <div class="field">
+        <label for="q-route">Trajet</label>
+        <select id="q-route"></select>
+      </div>
+      <div class="field">
+        <label for="q-pax">Passagers</label>
+        <select id="q-pax"><option value="3">1 à 3</option><option value="4">4</option></select>
+      </div>
+      <div class="fare">
+        <small>Prix fixe, bagages inclus</small>
+        <b id="q-price">35 €</b>
+      </div>
+      <a class="btn btn-primary" id="q-book" href="#reserver" style="width:100%;justify-content:center;margin-top:14px">Réserver ce trajet</a>
+    </div>
+  </div>
+</div>
+
+<section id="tarifs">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Tarifs fixes</h2>
+      <p>Le prix est confirmé à la réservation. Pas de majoration de nuit, pas de supplément bagages.</p>
+    </div>
+    <div class="board" id="board"></div>
+    <p class="note">Trajet non listé ? Demandez un devis par WhatsApp, réponse rapide.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap services">
+    <div class="svc"><h3>Aéroport Blagnac</h3><p>Suivi de votre vol, accueil en zone arrivées avec pancarte nominative, 45 minutes d'attente offertes.</p></div>
+    <div class="svc"><h3>Affaires</h3><p>Facture au nom de l'entreprise, mise à disposition à l'heure pour vos rendez-vous et séminaires.</p></div>
+    <div class="svc"><h3>Longue distance</h3><p>Carcassonne, Lourdes, Andorre, Bordeaux. Plus confortable que le train, porte à porte.</p></div>
+  </div>
+</section>
+
+<section class="book" id="reserver">
+  <div class="wrap grid">
+    <div class="intro">
+      <div class="label">Réservation</div>
+      <h2>Réservez votre chauffeur</h2>
+      <p>Remplissez le formulaire : votre demande s'ouvre dans WhatsApp, prête à envoyer. Je vous confirme le prix et l'heure de prise en charge.</p>
+      <a class="contact-line" data-tel href="tel:+33600000000">06 00 00 00 00</a>
+      <a class="contact-line small" href="mailto:contact@alloochauffeur.com">contact@alloochauffeur.com</a>
+    </div>
+    <form id="form" novalidate>
+      <div class="field full"><label for="f-from">Départ</label><input id="f-from" placeholder="Ex. Aéroport Toulouse-Blagnac" required></div>
+      <div class="field full"><label for="f-to">Destination</label><input id="f-to" placeholder="Ex. Place du Capitole, Toulouse" required></div>
+      <div class="field"><label for="f-date">Date</label><input id="f-date" type="date" required></div>
+      <div class="field"><label for="f-time">Heure</label><input id="f-time" type="time" required></div>
+      <div class="field"><label for="f-flight">N° de vol ou de train (optionnel)</label><input id="f-flight" placeholder="Ex. AF6128"></div>
+      <div class="field"><label for="f-pax">Passagers</label><select id="f-pax"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <div class="field"><label for="f-name">Nom</label><input id="f-name" autocomplete="name" required></div>
+      <div class="field"><label for="f-tel">Téléphone</label><input id="f-tel" type="tel" autocomplete="tel" required></div>
+      <button class="btn btn-primary full" type="submit" style="justify-content:center;margin-top:8px">Envoyer ma demande sur WhatsApp</button>
+      <div class="msg" id="msg" hidden></div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Questions fréquentes</h2></div>
+    <div class="faq">
+      <details><summary>Comment se passe la prise en charge à l'aéroport ?</summary><p>Je suis votre vol en temps réel et je vous attends en zone arrivées avec une pancarte à votre nom. Les 45 premières minutes d'attente sont offertes, même en cas de retard.</p></details>
+      <details><summary>Le prix peut-il changer ?</summary><p>Non. Le prix est fixé à la réservation, quel que soit le trafic. Il inclut les bagages et les péages éventuels.</p></details>
+      <details><summary>Puis-je réserver à la dernière minute ?</summary><p>Oui, selon disponibilité. Appelez ou envoyez un message WhatsApp : la course doit toujours être réservée avant la prise en charge.</p></details>
+      <details><summary>Fournissez-vous une facture ?</summary><p>Oui, une facture est envoyée par e-mail après chaque course, au nom de la personne ou de l'entreprise.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap trust">
+    <div><b>24h/24</b><span>sur réservation</span></div>
+    <div><b>Prix fixe</b><span>annoncé à l'avance</span></div>
+    <div><b>45 min</b><span>d'attente aéroport offertes</span></div>
+    <div><b>CB · Espèces</b><span>paiement à bord</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Allo Chauffeur · Exploitant VTC inscrit au registre n° EVTC0XXXXXXXXXX · SIRET XXX XXX XXX 00000</div>
+    <div>Transport sur réservation préalable uniquement · <a href="/mentions-legales.html">Mentions légales</a></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-ghost" data-wa href="https://wa.me/33600000000">WhatsApp</a>
+  <a class="btn btn-primary" data-tel href="tel:+33600000000">Appeler</a>
+</div>
+
+<script>
+// ====== À MODIFIER ======
+const PHONE_INTL = "33600000000";      // numéro WhatsApp au format international, sans + ni espaces
+const PHONE_DISPLAY = "06 00 00 00 00";
+const routes = [
+  // prix 1-3 passagers (p) et 4 passagers (p4), en euros
+  {from:"Aéroport Blagnac", to:"Centre-ville / Capitole", dur:"20 min", p:35,  p4:45},
+  {from:"Gare Matabiau",    to:"Aéroport Blagnac",        dur:"25 min", p:40,  p4:50},
+  {from:"Toulouse centre",  to:"Cité de l'espace",        dur:"15 min", p:30,  p4:38},
+  {from:"Toulouse",         to:"Carcassonne (Cité)",      dur:"1 h 05", p:160, p4:180},
+  {from:"Toulouse",         to:"Lourdes",                 dur:"2 h 00", p:260, p4:290},
+  {from:"Toulouse",         to:"Andorre-la-Vieille",      dur:"3 h 00", p:290, p4:320}
+];
+// ========================
+
+document.querySelectorAll("[data-tel]").forEach(a=>{a.href="tel:+"+PHONE_INTL;if(a.classList.contains("phone")||a.classList.contains("contact-line"))a.textContent=PHONE_DISPLAY;});
+document.querySelectorAll("[data-wa]").forEach(a=>a.href="https://wa.me/"+PHONE_INTL);
+
+const board=document.getElementById("board"),sel=document.getElementById("q-route"),pax=document.getElementById("q-pax"),out=document.getElementById("q-price");
+routes.forEach((r,i)=>{
+  board.insertAdjacentHTML("beforeend",`<div class="row"><div class="route"><b>${r.from} → ${r.to}</b><span>Berline, jusqu'à 3 passagers</span></div><div class="dur">${r.dur}</div><div class="price">${r.p} €</div></div>`);
+  sel.insertAdjacentHTML("beforeend",`<option value="${i}">${r.from} → ${r.to}</option>`);
+});
+function quote(){const r=routes[sel.value];out.textContent=(pax.value==="4"?r.p4:r.p)+" €";}
+sel.addEventListener("change",quote);pax.addEventListener("change",quote);quote();
+
+document.getElementById("q-book").addEventListener("click",()=>{
+  const r=routes[sel.value];
+  document.getElementById("f-from").value=r.from;
+  document.getElementById("f-to").value=r.to;
+  document.getElementById("f-pax").value=pax.value==="4"?"4":"1";
+});
+
+const today=new Date().toISOString().slice(0,10);
+document.getElementById("f-date").min=today;
+
+document.getElementById("form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg=document.getElementById("msg");
+  const missing=["f-from","f-to","f-date","f-time","f-name","f-tel"].filter(id=>!v(id));
+  if(missing.length){msg.className="msg err";msg.textContent="Merci de remplir le départ, la destination, la date, l'heure, votre nom et votre téléphone.";msg.hidden=false;document.getElementById(missing[0]).focus();return;}
+  const text=[
+    "Bonjour, je souhaite réserver un trajet :",
+    "Départ : "+v("f-from"),
+    "Destination : "+v("f-to"),
+    "Date : "+v("f-date").split("-").reverse().join("/")+" à "+v("f-time"),
+    v("f-flight")?"Vol / train : "+v("f-flight"):"",
+    "Passagers : "+v("f-pax"),
+    "Nom : "+v("f-name"),
+    "Téléphone : "+v("f-tel")
+  ].filter(Boolean).join("\n");
+  window.location.href="https://wa.me/"+PHONE_INTL+"?text="+encodeURIComponent(text);
+  msg.className="msg";msg.textContent="WhatsApp s'ouvre avec votre demande. Appuyez sur Envoyer pour la transmettre. Sans WhatsApp ? Appelez le "+PHONE_DISPLAY+".";msg.hidden=false;
+});
+</script>
+</body>
+</html>
